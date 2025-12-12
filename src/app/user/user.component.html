@@ -1,0 +1,29 @@
+<section class="user-container">
+  <h3>Users</h3>
+
+  <ng-container *ngIf="users$ | async as users; else loading">
+
+    <p *ngIf="users.length === 0">No users found.</p>
+
+    <table *ngIf="users.length > 0" class="user-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.id }}</td>
+          <td>{{ user.name }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </ng-container>
+
+  <ng-template #loading>
+    <p>Loading users...</p>
+  </ng-template>
+</section>

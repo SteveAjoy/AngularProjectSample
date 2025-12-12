@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "position": "Software Engineer",
+    "department": "IT"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "position": "Project Manager",
+    "department": "Operations"
+  },
+  {
+    "id": 3,
+    "name": "Alice Johnson",
+    "position": "UI/UX Designer",
+    "department": "Design"
+  },
+  {
+    "id": 4,
+    "name": "Bob Williams",
+    "position": "Data Analyst",
+    "department": "Finance"
+  }
+]
